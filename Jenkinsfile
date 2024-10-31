@@ -1,10 +1,10 @@
 node {
-  stage 'Checkout'
-  checkoutscm
+ stage 'Checkout'
+ checkout scm
 
-  stage 'Build'
-  sh 'javac HellowWorld.java'
+ stage 'Build'
+ sh 'javac HellowWorld.java'
 
-  stage 'Test'
-  sh 'java HellowWorld | grep Hello'
+ stage 'Test'
+ sh 'java HellowWorld | grep Hello'
 }
