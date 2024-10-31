@@ -3,8 +3,8 @@ node {
  checkout scm
 
  stage 'Build'
- sh 'javac HellowWorld.java'
+ sh 'javac HelloWorld.java'
 
  stage 'Test'
- sh 'java HellowWorld | grep Hello'
+ sh 'java HelloWorld | grep Hello'
 }
